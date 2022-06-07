@@ -1,10 +1,12 @@
+/*VARIABLES*/
+
 const result = document.querySelector('.result');
 const form = document.querySelector('.get-weather');
 const nameCity = document.querySelector('#city');
 const nameCountry = document.querySelector('#country');
 
 
-/*ALERTA*/
+/*ALERTA CON TOASTIFY*/
 const button = document.getElementById("boton1");
 
 button.addEventListener("click", () => {
@@ -40,7 +42,7 @@ form.addEventListener('submit', (e) => {
 
 })
 
-/*API*/
+/*LLAMANDO A LA API*/
 
 function callAPI(city, country) {
     const apiId = '41d1d7f5c2475b3a16167b30bc4f265c';
@@ -64,6 +66,7 @@ function callAPI(city, country) {
 }
 
 
+/*APLICACION*/
 
 function showWeather(data) {
     const { name, main: { temp, temp_min, temp_max }, weather: [arr] } = data;
@@ -98,6 +101,8 @@ function showError(message) {
         alert.remove();
     }, 3000);
 }
+
+/*PASAR DE KELVIN A CELCIUSº*/
 
 function kelvinToCentigrade(temp) {
     return parseInt(temp - 273);

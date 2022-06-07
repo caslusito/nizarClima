@@ -196,6 +196,7 @@ nav {
     color: #fff;
     transition: 1s;
 }
+
 /*----APP CLIMA-----*/
 
 .weather-content {
@@ -281,9 +282,11 @@ form input[type="submit"]:hover {
     margin: 24px 0 0;
     color: red !important;
 }
+
 div.toastify {
-    background: linear-gradient(135deg,#fff,rgb(248, 8, 8));
+    background: linear-gradient(135deg, #fff, rgb(248, 8, 8));
 }
+
 /*----FAQ-----*/
 .faq {
     text-align: center;
@@ -603,4 +606,3 @@ footer {
     }
 
 }
-
