@@ -74,11 +74,6 @@ function showWeather(data) {
     const degrees = kelvinToCentigrade(temp);
     const min = kelvinToCentigrade(temp_min);
     const max = kelvinToCentigrade(temp_max);
-
-/*GUARDADO EN LOCALSTORAGE*/
-    localStorage.setItem("name", JSON.stringify(name))
-    localStorage.setItem("degrees", JSON.stringify(degrees))
-
     const content = document.createElement('div');
     content.innerHTML = `
         <h5>Clima en ${name}</h5>
