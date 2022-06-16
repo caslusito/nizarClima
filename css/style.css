@@ -244,7 +244,7 @@ nav {
 }
 
 .body-contacto.light .weather-content p {
-    color: rgb(26, 26, 26);
+    color: black;
 }
 
 
@@ -308,6 +308,11 @@ form input[type="submit"] {
     color: #fff;
     font-weight: 600;
     transition: width 1s;
+}
+
+.body-contacto.light form input[type="submit"] {
+    color: black;
+
 }
 
 form input[type="submit"]:hover {
